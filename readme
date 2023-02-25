@@ -1,1 +1,12 @@
-studygroup
+StudyGroup
+
+
+
+StudyGroup is a social network that students will use to meet other students and to aid in the formation and function of a study group. A user will be able to join, add contact information, input their “study-time” schedules, and create or join study groups for any class they are in. clearly the target market here is students of any kind. 
+Need:   
+This database application will solve two major problems that currently exist for the average study group:
+Problem 1: Many students don’t know each other and meeting other students is a difficult process; researchers estimate that up to 50 percent of the population are introverts (from Psychology Today). Approaching other students, or even worse a group of students, is intimidating for many and leaves those students feeling like it’s impossible to make connections.  
+Solution: We all go to class at a certain time, we all eat at a certain time, and we all usually study at a certain time. This application will compare student’s user input “study-time” schedule and make suggested introductions from one student to another, or group, based on their compatible available study-times. This study-time overlap of users and groups allows students to join and form groups with ease and confidence, making those connections that may never have existed possible.
+Problem 2: Once two or more students meet and are ready to form a study group, then occurs the cumbersome data sharing and meeting decisions. The study group formation conversation, with questions like: “What is your email / phone number?”, “What time are you free?”, and “When should we meet?”, can be a needlessly long process and can many times leave students unsatisfied with decisions made by others (especially in larger groups).  Moreover, a study group’s formation might still be halted by the incompatibility of schedules
+ Solution: This database application will allow students to create a study group and then will automatically produce the top suggested meeting times based on the joined student’s study-time schedules. Additionally, all contact info of any student will be made available immediately to all others in the group once joined. So, the data sharing process becomes instantaneous instead of burdensome.
+
