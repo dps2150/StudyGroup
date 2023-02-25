@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Post</title>
+<style>
+    #top	{
+	width: 100%;
+	height: 45px;
+	margin: 0;
+	background-color: #473e3f;
+	}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #473e3f;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover:not(.active) {
+    background-color: #111;
+}
+.active {
+    background-color: #4CAF50;
+}
+</style>
+
+</head>
+<body>
+<ul>
+    <li><a href="home">Home</a></li>
+    <li><a href="groups">Groups</a></li>
+    <li><a href="studytime">StudyTime</a></li>
+    <li style="float:right"><a href="logout">logout</a></li>
+</ul>
+<h3>Post</h3>
+<form method="POST" action="/posting">
+
+    <select name="sgid">
+      {% for n in gnames %}
+        {% if n is number %}
+            <option value="{{n}}">
+        {% else %}
+            {{n}}</option>
+        {% endif %}
+      {% endfor %}
+    </select>
+     <br>
+         <textarea name="post" rows="10" cols="30">hello</textarea>
+        <br>
+      <input type="submit">
+<div>{{posted}}</div>
+
+</form>
+</body>
+</html>

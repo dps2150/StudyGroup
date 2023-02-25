@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+<style>
+body{
+text-align: center;}
+h3{
+    color:#473e3f;
+    font-style: italic;
+}
+table, th, td {
+   border-bottom: 1px solid #ddd;
+}
+th,td { padding: 5px
+}
+th {
+background-color: #c0f7f6;
+text-align: left;
+}
+tr:hover { background-color: #6ccecb;
+}
+#top	{
+	width: 100%;
+	height: 45px;
+	margin: 0;
+	background-color: #473e3f;
+	}
+</style>
+</head>
+<body>
+<div id="top"></div>
+<h3>Register:</h3>
+<form method="POST" action="/testemail">
+    Email:<br>
+    <input type="text" name="email"><br>
+      {{error}}<br>
+    <input type="submit" value="check"> </p>
+</form>
+</body>
+</html>

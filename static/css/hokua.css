@@ -1,0 +1,80 @@
+body {
+	
+	font-family: Georgia, "Times New Roman", serif;}
+	
+h1 {
+	background-color:#E5E5E5;
+	text-align: center;
+	color:#660000;
+	line-height:200%;
+	font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+	height: 72px;
+	font-style: bold ;
+	margin-bottom: 1px;
+	-webkit-box-shadow: 3px 3px 3px #1e1e1e;
+	-moz-box-shadow: 3px 3px 3px #1e1e1e;
+	box-shadow: 3px 3px 3px #1e1e1e;}
+
+h2 {
+	text-align: center;
+	color:#003300;
+	font-family: "comic Sans MS", cursive, sans-serif;
+	font-size: 25px; }
+
+P { 
+	text-align: center;
+	font-family: "comic Sans MS", cursive, sans-serif;}
+		
+	
+#container {
+	background-color: #ffffff;
+	padding: 20px;
+	width: 700px;
+	min-height: 500px;
+	margin-right: auto;
+	margin-left: auto; 
+	-webkit-box-shadow: 5px 5px 5px #1e1e1e;
+	-moz-box-shadow: 5px 5px 5px #1e1e1e;
+	box-shadow: 5px 5px 5px #1e1e1e;}
+
+form {
+	background:#e5e5e5;
+	padding:1em;
+	border:1px solid #b8b8b8;
+	margin:1em;
+	width:30em;}
+
+fieldset div {
+	margin:1em;
+	clear:both;}
+
+label {
+	float:left;
+	width:6em;
+	display:block;
+	clear:both;}
+
+input {
+	padding:0.15em;
+	width:10em;
+	border:1px solid #ddd;
+	background:#ffffff;
+	font:bold 1em arial, sans-serif;
+	-moz-border-radius:0.4em;
+	-khtml-border-radius:0.4em;
+	display:block;
+	float:left;}
+	
+input:hover, input:focus {
+	border-color:#e8e8e8;
+	background:#ffffff;} 
+
+fieldset {
+	border:1px solid #ddd;
+	padding:0 0.5em 0.5em;}
+img  {
+	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto; }
+

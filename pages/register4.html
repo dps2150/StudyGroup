@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+<style>
+
+#top	{
+	width: 100%;
+	height: 45px;
+	margin: 0;
+	background-color: #473e3f;
+	}
+h3{
+    color:#473e3f;
+    font-style: italic;
+}
+table, th, td {
+   border-bottom: 1px solid #ddd;
+}
+th,td { padding: 5px
+}
+th {
+background-color: #c0f7f6;
+text-align: left;
+}
+tr:hover { background-color: #6ccecb;
+}
+#top	{
+	width: 100%;
+	height: 45px;
+	margin: 0;
+	background-color: #473e3f;
+	}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #473e3f;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover:not(.active) {
+    background-color: #111;
+}
+.active {
+    background-color: #4CAF50;
+}
+</style>
+</head>
+<body>
+<div id="top"></div>
+<h3>Select Your Courses</h3>
+<table>
+     <tr>
+    {% for n in c %}
+      {%if n == ' ' %}
+        </tr><tr>
+      {% else %}
+      <td>{{n}}</td>
+      {% endif %}
+    {% endfor %}
+    </tr>
+</table>
+
+<h3>Select COURSE ID:</h3>
+<form method="POST" action="/register5">
+
+    <select name="cid">
+      {% for n in cid %}
+        <option value="{{n}}">{{n}}</option>
+      {% endfor %}
+    </select>
+    <input type="submit" Value="Select">
+</form><br><br>
+<div><a href="home">{{done}}</a></div>
+</body>
+</html>

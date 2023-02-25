@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Join Group</title>
+<style>
+h3{
+    color:#473e3f;
+    font-style: italic;
+}
+table, th, td {
+   border-bottom: 1px solid #ddd;
+}
+th,td { padding: 5px
+}
+th {
+background-color: #c0f7f6;
+text-align: left;
+}
+tr:hover { background-color: #6ccecb;
+}
+#top	{
+	width: 100%;
+	height: 45px;
+	margin: 0;
+	background-color: #473e3f;
+	}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #473e3f;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover:not(.active) {
+    background-color: #111;
+}
+.active {
+    background-color: #4CAF50;
+}
+</style>
+</head>
+<body>
+<ul>
+    <li><a href="home">Home</a></li>
+    <li><a href="groups">Groups</a></li>
+    <li><a href="studytime">StudyTime</a></li>
+    <li style="float:right"><a href="logout">logout</a></li>
+</ul>
+<h3>Groups That Fit Your StudyTimes:</h3>
+  <table>
+     <tr>
+         <th>COURSE</th>
+         <th>GROUP NAME</th>
+         <th>LOCATION</th>
+         <th>M start</th>
+         <th>M end</th>
+         <th>T start</th>
+         <th>T end</th>
+         <th>W start</th>
+         <th>W end</th>
+         <th>TH start</th>
+         <th>TH end</th>
+         <th>F start</th>
+         <th>F end</th>
+         <th>SA start</th>
+         <th>SA end</th>
+         <th>SU start</th>
+         <th>SU end</th>
+     </tr>
+     <tr>
+    {% for n in jgroups %}
+      {%if n == ' ' %}
+        </tr><tr>
+      {% else %}
+      <td>{{n}}</td>
+      {% endif %}
+    {% endfor %}
+    </tr>
+  </table><br>
+<h3>Which Group Would You Like To Join?</h3>
+<form method="POST" action="/joingroup2">
+
+    <select name="sgid">
+      {% for n in jgroup %}
+        {% if n is number %}
+            <option value="{{n}}">
+        {% else %}
+            {{n}}</option>
+        {% endif %}
+      {% endfor %}
+    </select>
+
+      <input type="submit" value="Join">
+<div>{{joined}}</div>
+</form>
+
+</body>
+</html>

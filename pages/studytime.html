@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>StudyTime</title>
+<style>
+h3{
+    color:#473e3f;
+    font-style: italic;
+}
+table, th, td {
+   border-bottom: 1px solid #ddd;
+}
+th,td { padding: 5px
+}
+th {
+text-align: left;
+}
+tr:hover { background-color: #6ccecb;
+}
+#top	{
+	width: 100%;
+	height: 45px;
+	margin: 0;
+	background-color: #473e3f;
+	}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #473e3f;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover:not(.active) {
+    background-color: #111;
+}
+.active {
+    background-color: #4CAF50;
+}
+</style>
+</head>
+<body>
+<ul>
+    <li><a href="home">Home</a></li>
+    <li><a href="groups">Groups</a></li>
+    <li><a href="studytime">StudyTime</a></li>
+    <li style="float:right"><a href="logout">logout</a></li>
+</ul>
+<h2>Here are your study times:</h2>
+
+<table>
+    <tr>
+        <th>Monday Start:</th>
+        <th>{{mstart}}</th>
+        <th>Monday End:</th>
+        <th>{{mend}}</th>
+    </tr>
+    <tr>
+        <th>Tuesday Start:</th>
+        <th>{{tstart}}</th>
+        <th>Tuesday End:</th>
+        <th>{{tend}}</th>
+    <tr>
+        <th>Wednesday Start:</th>
+        <th>{{wstart}}</th>
+        <th>Wednesday End:</th>
+        <th>{{wend}}</th>
+    </tr>
+    <tr>
+        <th>Thursday Start:</th>
+        <th>{{thstart}}</th>
+        <th>Thursday End:</th>
+        <th>{{thend}}</th>
+    </tr>
+    <tr>
+        <th>Friday Start:</th>
+        <th>{{fstart}}</th>
+        <th>Friday End:</th>
+        <th>{{fend}}</th>
+    </tr>
+    <tr>
+        <th>Saturday Start:</th>
+        <th>{{sastart}}</th>
+        <th>Saturday End:</th>
+        <th>{{saend}}</th>
+    </tr>
+    <tr>
+        <th>Sunday Start:</th>
+        <th>{{sustart}}</th>
+        <th>Sunday End:</th>
+        <th>{{suend}}</th>
+    </tr>
+
+    </tr>
+</table><br><br>
+<a href="register3">Register For Courses</a><br><br>
+
+<a href="deleteuser">Delete User</a>
+</body>
+</html>

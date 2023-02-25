@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+<style>
+body{
+text-align: center;}
+h3{
+    color:#473e3f;
+    font-style: italic;
+}
+table, th, td {
+   border-bottom: 1px solid #ddd;
+}
+th,td { padding: 5px
+}
+th {
+background-color: #c0f7f6;
+text-align: left;
+}
+tr:hover { background-color: #6ccecb;
+}
+#top	{
+	width: 100%;
+	height: 45px;
+	margin: 0;
+	background-color: #473e3f;
+	}
+</style>
+</head>
+<body>
+<div id="top"></div>
+<h3></h3>
+<form method="POST" action="/userinfo">
+    <p action="\emailfill">Hi {{email}}</p>
+  <p>Register: <br><br>
+    Create Password:<br>
+    <input type="text" name="password"><br><br>
+    Your Name:<br>
+    <input type="text" name="name"><br><br>
+      Phone Number:   ex. 555-555-5555<br>
+    <input type="text" name="phone"><br><br>
+      Major:<br>
+    <input type="text" name="major"> <br><br>
+    <input type="submit" value="next"> </p>
+</form>
+
+
+
+</body>
+</html>
